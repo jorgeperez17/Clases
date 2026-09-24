@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="description" content="Curso interactivo de Python para negocios, datos e inteligencia artificial" />
+<title>Python para Negocios, Datos e IA</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-mark">Py</div>
+      <div><strong>Python para Negocios</strong><span>Datos e IA</span></div>
+    </div>
+    <div class="progress-wrap"><div class="progress-label"><span>Progreso</span><strong id="progressText">0%</strong></div><div class="progress"><i id="progressBar"></i></div></div>
+    <nav id="classNav"></nav>
+    <div class="side-actions"><button id="themeBtn">◐ Tema</button><button id="resetBtn">↺ Reiniciar progreso</button></div>
+  </aside>
+  <main>
+    <header class="topbar">
+      <button class="menu-btn" id="menuBtn">☰</button>
+      <div class="crumb" id="crumb">Inicio</div>
+      <div class="top-actions"><button id="searchBtn">⌕ Buscar</button><button id="fullBtn">⛶ Pantalla completa</button></div>
+    </header>
+    <section id="view"></section>
+  </main>
+</div>
+<div class="search-modal" id="searchModal" aria-hidden="true"><div class="search-panel"><div class="search-head"><input id="searchInput" placeholder="Buscar concepto, función, actividad..." autofocus><button id="closeSearch">✕</button></div><div id="searchResults"></div></div></div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body></html>
